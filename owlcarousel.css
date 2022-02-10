@@ -1,0 +1,54 @@
+.owl-carousel{
+    width:fit-content;
+    margin: 0 auto;
+   padding-bottom: 3rem;
+   overflow: hidden;
+}
+.owl-card-wrapper{
+    display: flex;  
+}
+.owl-card{
+    min-width: 33%;
+    margin: 0 20px;
+}
+.owl-card img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.owl-card .date{
+    margin: 10px 0;
+}
+.owl-card > h3{
+    font-size:calc(var(--normal-fontSize) + 10px);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+}
+.owl-card .banner{
+    display: flex;
+    margin: 10px 0;
+}
+.banner .profile{
+    margin-right: 20px;
+}
+.info > h2{
+    font-size:calc(var(--normal-fontSize) + 0.3rem);
+    font-weight: 520;
+}
+.info .business{
+    font-size: calc(var(--normal-fontSize) - 2px);
+    color: var(--nav-text-color);
+    margin-top: 10px;
+}
+@media (max-width:400px) {
+    .owl-card{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .owl-card > img{
+    max-width: 90%;
+
+    }
+}

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.container-body {
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: red; */
+}
+
+
+/* Two Layer  */
+
+.blue-layer {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(17, 106, 248);
+    position: relative;
+}
+
+.darkblue-layer {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(5, 33, 78);
+    position: relative;
+}
+
+
+/* Blue Layer items  */
+
+
+/* .blue-layer p {
+    font-size: 700%;
+    opacity: 1;
+    color: rgb(117, 170, 255);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.4px;
+    position: relative;
+} */
+
+.blue-layer h1 {
+    font-size: 200%;
+    color: #ffff;
+}
+
+.blue-layer h1::before {
+    content: "Vlog";
+    /* color: #ffff; */
+    font-size: 700%;
+    opacity: 1;
+    color: rgb(117, 170, 255);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.4px;
+    top: 8%;
+    left: 20%;
+    position: absolute;
+}
+
+.blue-layer a,
+.btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #ffff;
+    border: 1px solid #ffff;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+.btn {
+    padding: 10px 20px;
+}
+
+.blue-layer a:hover,
+.btn:hover {
+    color: rgb(17, 106, 248);
+    background-color: #ffff;
+}
+
+.container-slide {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    overflow-x: hidden;
+    top: 40%;
+    left: 0;
+    position: absolute;
+    /* background-color: aquamarine; */
+}
+
+.img-slider {
+    display: flex;
+    /* background-color: violet; */
+}
+
+.imgs {
+    min-width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(241, 121, 121); */
+    /* top: 55%; */
+    /* left: 0%; */
+    /* position: relative; */
+    /* z-index: 99; */
+    /* flex: 2; */
+    /* margin: 0 2px; */
+    /* transform: translateY(-50%); */
+    /* overflow: hidden; */
+}
+
+.imgs .images {
+    flex: 1;
+    width: 84%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: top; */
+}
+
+.container-text {
+    line-height: 250%;
+}
+
+.imgs .pfs {
+    width: 15%;
+    height: 15%;
+}
+
+.contents {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.date {
+    font-size: 90%;
+    text-decoration: none;
+    color: rgb(17, 106, 248);
+}
+
+.text {
+    font-size: 150%;
+    color: #ffff;
+}
+
+.info {
+    line-height: 150%;
+    flex-direction: column;
+    margin: 0 0 0 10px;
+}
+
+.info a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.info p {
+    color: #dddd;
+}
+
+@media (max-width: 1100px) {
+    .blue-layer p {
+        display: none;
+    }
+    .blue-layer {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .blue-layer h1 {
+        margin: 0 0 20px 0;
+    }
+    .blue-layer h1::before {
+        display: none;
+    }
+    .imgs {
+        min-width: 100%;
+        margin: 0 auto;
+    }
+}
